@@ -52,35 +52,45 @@
         <input type="text" name="search_query">
         <button>Search in youtube</button>
     </form>
+
+    <hr>
+    <h2>More inputs</h2>
+    <form action="/words">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree </label>
+    
+        <p>
+            <input type="radio" name="gender" checked id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" checked id="female" value="female">
+            <label for="female">Female</label>
+    
+        </p>
+        <p>
+            <label for="country">Please select your country of origin</label>
+            <select name="country" id="country">
+                <option value="Argentina">Argentina</option>
+                <option value="Brazil" selected>Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Canada">Canada</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Germany">Germany</option>
+            </select>
+        </p>
+        
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" name = "cheese" min="0" max="10" step="1" value="1" id="cheese">
+        </p>
+    
+        <button>Submit</button>
+    
+    
+    </form>
+
+
 </body>
 
-<h2>More inputs</h2>
-<form action="/words">
-    <input type="checkbox" name="agree_tos" id="agree">
-    <label for="agree">I agree </label>
 
-    <p>
-        <input type="radio" name="gender" checked id="male" value="male">
-        <label for="male">Male</label>
-        <input type="radio" name="gender" checked id="female" value="female">
-        <label for="female">Female</label>
-
-    </p>
-    <label for="country">Please select your country of origin</label>
-    <select name="country" id="country">
-        <option value="Argentina">Argentina</option>
-        <option value="Brazil" selected>Brazil</option>
-        <option value="Chile">Chile</option>
-        <option value="Canada">Canada</option>
-        <option value="Denmark">Denmark</option>
-        <option value="Germany">Germany</option>
-    </select>
-
-    <br>
-
-    <button>Submit</button>
-
-
-</form>
 
 </html>
