@@ -93,3 +93,26 @@ button:hover {
 button {
     background-color: magenta;
 }
+
+h2::first-letter    {
+    font-size: 50px;
+}
+
+p::first-line   {
+    color:purple;
+}
+
+p::selection    {
+    background-color:#fcbf49;
+}
+
+
+button:hover    {
+    font-size: 5px;
+}
+
+/* The !important 'clause' overrides the CSS specificity rule 
+and force the desired styles upon the page*/
+button:hover    {
+    color: rebeccapurple!important;
+}
