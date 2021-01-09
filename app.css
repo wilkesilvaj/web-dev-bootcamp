@@ -1,3 +1,8 @@
+html    {
+    font-size: 30px;
+}
+
+/* % Unit Styling */
 section {
     background-color: #6d6875;
     width: 400px;
@@ -9,6 +14,8 @@ div {
     width: 70%;
     height: 20%;
 }
+
+/* EMs Unit Styling*/
 
 #ems h1  { 
     font-size: 40px;
@@ -44,4 +51,27 @@ div {
 #ems ul  {
     font-size: 1.5em;
 
+}
+/* REMs Unit Styling*/
+#rems h1  { 
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%;
+}
+
+#rems h2    {
+    font-size: 3rem;
+}
+#rems h3  {
+    font-size: 2rem;
+}
+
+#rems ul    {
+    font-size: 1rem;
+}
+
+#rems button    {
+    font-size: 1.5rem;
+    border-radius: 0.5em;
+    background-color: orchid;
 }
