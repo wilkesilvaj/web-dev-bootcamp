@@ -6,6 +6,11 @@ div {
     margin: 10px;
 }
 
+section {
+
+    border: 3px dashed black;
+}
+
 .one    {
     background-color: cornflowerblue;
 }
@@ -24,4 +29,13 @@ div {
 
 #relative .two    {
     position: relative;
+    top: 50px;
+    left: 50px;
+
+}
+
+#absolute .two    {
+    position: absolute;
+    top: 600px;
+    left: 100px;
 }
