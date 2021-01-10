@@ -1,4 +1,4 @@
-h1  {
+h1 {
     background-color: #2a9d8f;
     border: 5px solid #264653;
     color: #eae2b7;
@@ -11,33 +11,56 @@ h1  {
     font-weight: lighter;
 }
 
-h1:nth-of-type(2n)    {
+h1:nth-of-type(2n) {
     background-color: #e9c46a;
 }
-h1:nth-of-type(3n)    {
-    background-color:   #f4a261;
+
+h1:nth-of-type(3n) {
+    background-color: #f4a261;
 }
-h1:nth-of-type(4n)    {
+
+h1:nth-of-type(4n) {
     background-color: #e76f51;
 }
 
 /* 
     rotate() rotates the element
     scale() increases or decreases the size of the element 
-    translate moves the element around*/
+    translate() moves the element around
+    skew() skews an element on the 2D plane
+    */
 
-section:first-of-type h1:nth-of-type(1):cl   {
+/* The following CSS styles the <H1> of the FIRST <section> */
+
+section:first-of-type h1:nth-of-type(1):cl {
     /* transform-origin: bottom right; */
     transform: rotate(45deg);
 }
-section:first-of-type h1:nth-of-type(2):hover   {
+
+section:first-of-type h1:nth-of-type(2):hover {
     transform: scale(0.5);
     /* transform: scaleY(2);  This doubles its height*/
 }
-section:first-of-type h1:nth-of-type(3):hover   {
-  transform: translateX(300px);
+
+section:first-of-type h1:nth-of-type(3):hover {
+    transform: translateX(300px);
 }
-section:first-of-type h1:nth-of-type(4):hover   {
-  /* transform: translateY(-200px) ; */
-  transform: translate(100px, -50px) ; /*Horizontally, Vertically*/
+
+section:first-of-type h1:nth-of-type(4):hover {
+    /* transform: translateY(-200px) ; */
+    /*Horizontally, Vertically*/
+    transform: translate(100px, -50px);
+}
+
+section:nth-of-type(2) h1:nth-of-type(1):hover  {
+    transform: skew(30deg);
+}
+section:nth-of-type(2) h1:nth-of-type(2):hover  {
+    transform: skew(10deg, 5deg);
+}
+section:nth-of-type(2) h1:nth-of-type(3):hover  {
+    transform: rotate(-20deg) scale(1.3);
+}
+section:nth-of-type(2) h1:nth-of-type(4):hover  {
+    transform: translate(-450px) rotate(0.5turn) scaleY(1.5) ;
 }
