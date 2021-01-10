@@ -1,16 +1,27 @@
 div {
     height: 100px;
     width: 100px;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 10px;
 }
 
-#one    {
+.one    {
     background-color: cornflowerblue;
 }
 
-#two    {
+.two    {
     background-color: crimson;
 }
 
-#three  {
+.three  {
     background-color: chocolate;
+}
+
+#static .two    {
+    position:static;
+}
+
+#relative .two    {
+    position: relative;
 }
