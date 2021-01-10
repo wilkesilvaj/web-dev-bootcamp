@@ -23,6 +23,8 @@ section:hover div   {
     margin-left: 500px
 }
 
+/* The next stylings make use of the different timing functions of transitions */
+
 div:nth-last-of-type(1)  {
     transition-timing-function: ease-in;
     
