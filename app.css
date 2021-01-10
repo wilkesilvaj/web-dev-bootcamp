@@ -39,3 +39,9 @@ section {
     top: 600px;
     left: 100px;
 }
+
+#fixed .two    {
+    position: absolute;
+    top: 800px;
+    left: 200px;
+}
