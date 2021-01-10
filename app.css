@@ -22,3 +22,21 @@ section div {
 section:hover div   {
     margin-left: 500px
 }
+
+div:nth-last-of-type(1)  {
+    transition-timing-function: ease-in;
+    
+}
+div:nth-last-of-type(2)  {
+    transition-timing-function: ease-out;
+    
+}
+div:nth-last-of-type(3)  {
+    transition-timing-function: cubic-bezier(0.7,0,0.84,0);
+    
+}
+div:nth-last-of-type(4)  {
+    transition-timing-function: cubic-bezier(0.85,0,0.15,1);
+    
+}
+
