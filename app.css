@@ -12,9 +12,21 @@ h1 {
     border: 5px solid #003049;
     display: flex;
     flex-direction: row; 
+    /* justify-content is responsible for how items are aligned along the flexbox's MAIN AXIS */
     justify-content: center;
     /* flex-direction: column;  This makes the flexbox arrange items vertically (top to bottomm)*/
     /* flex-direction: row-reverse; This makes the flexbox arrange items from right to left*/
+
+    /* align-items is responsible for how items are aligned along the flexbox's CROSS AXIS */
+    align-items: center;
+
+    /* flex-wrap is responsible for how items are DISTRIBUTED along the available space */
+    flex-wrap: wrap-reverse;
+
+    align-content: space-between;
+
+
+    
 }
 
 #container div  {
@@ -25,17 +37,17 @@ h1 {
 /* CSS for the colors of the divs */
 
 section#container div:nth-of-type(1)    {
-    background-color: #80ffdb
+    background-color: #80ffdb;
 }
 section#container div:nth-of-type(2)    {
-    background-color: #64dfdf
+    background-color: #64dfdf;
 }
 section#container div:nth-of-type(3)    {
-    background-color: #48bfe3
+    background-color: #48bfe3;
 }
 section#container div:nth-of-type(4)    {
-    background-color: #5390d9
+    background-color: #5390d9;
 }
 section#container div:nth-of-type(5)    {
-    background-color: #6930c3
+    background-color: #6930c3;
 }
