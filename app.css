@@ -80,12 +80,12 @@ main    {
 
 main .sidebar   {
     background-color: #6930c3;
-    flex: 1 250px;
     border: 1px solid white;
+    flex: 1 2 250px;
     
 }
 
 main .maincontent   {
     background-color: #80ffdb;
-    flex: 1 600px ;
+    flex: 2 1 800px ;
 }
