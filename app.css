@@ -10,5 +10,28 @@ h1 {
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
+    display: flex;
 }
 
+#container div  {
+    width: 200px;
+    height: 200px;
+}
+
+/* CSS for the colors of the divs */
+
+section#container div:nth-of-type(1)    {
+    background-color: #80ffdb
+}
+section#container div:nth-of-type(2)    {
+    background-color: #64dfdf
+}
+section#container div:nth-of-type(3)    {
+    background-color: #48bfe3
+}
+section#container div:nth-of-type(4)    {
+    background-color: #5390d9
+}
+section#container div:nth-of-type(5)    {
+    background-color: #6930c3
+}
