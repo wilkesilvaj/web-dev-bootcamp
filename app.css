@@ -8,7 +8,7 @@ h1 {
 
 #container {
     background-color: #003049;
-    width: 90%;
+    width: 95%;
     height: 500px;
     margin: 0 auto;
     border: 5px solid #003049;
@@ -30,17 +30,20 @@ h1 {
     width: 200px;
     height: 200px;
     text-align: center;
+    flex-basis: 200px;
 }
 
 /* CSS for the colors of the divs */
 
 section#container div:nth-of-type(1) {
     background-color: #80ffdb;
+    flex-grow: 1;
+
 }
 
 section#container div:nth-of-type(2) {
     background-color: #64dfdf;
-    align-self: center;
+    /* align-self: center; */
 }
 
 section#container div:nth-of-type(3) {
@@ -49,9 +52,11 @@ section#container div:nth-of-type(3) {
 
 section#container div:nth-of-type(4) {
     background-color: #5390d9;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
 
 section#container div:nth-of-type(5) {
     background-color: #6930c3;
+    flex-grow: 1;
+    /* align-self: flex-start; */
 }
