@@ -1,14 +1,14 @@
-img {
-    width: 30%;
-    margin: calc(10%/6);
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    text-align: center;
+}
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
 }
 
-nav {
-    text-transform: uppercase;
-    border-bottom: 2px solid #f1f1f1;
-    font-size: 1.5em;
-    font-family: 'Noto Sans JP', sans-serif;
-    width: 30%;
-    margin-left: calc(10%/6);
-    padding: 1.2em 0;
-}
