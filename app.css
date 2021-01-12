@@ -24,13 +24,16 @@ h1 {
     /* flex-direction: column;  This makes the flexbox arrange items vertically (top to bottomm)*/
     /* flex-direction: row-reverse; This makes the flexbox arrange items from right to left*/
     /* align-items is responsible for how items are aligned along the flexbox's CROSS AXIS */
+    /* flex-grow sets the rate to which a particular element grows depending on how much free space there is within the flexbox's MAIN AXIS */
+    /* flex-shrink sets the rate to which a particular element shrinks depending on how much free space there is within the flexbox's MAIN AXIS */
 }
 
 #container div {
     width: 200px;
     height: 200px;
     text-align: center;
-    flex-basis: 200px;
+    flex-basis: 500px;
+    flex-grow: 1;
 }
 
 /* CSS for the colors of the divs */
@@ -57,6 +60,6 @@ section#container div:nth-of-type(4) {
 
 section#container div:nth-of-type(5) {
     background-color: #6930c3;
-    flex-grow: 1;
+    flex-grow: 2;
     /* align-self: flex-start; */
 }
