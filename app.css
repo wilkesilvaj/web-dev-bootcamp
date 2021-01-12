@@ -2,7 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
 }
 
@@ -24,8 +24,9 @@ h1 {
     /* flex-direction: column;  This makes the flexbox arrange items vertically (top to bottomm)*/
     /* flex-direction: row-reverse; This makes the flexbox arrange items from right to left*/
     /* align-items is responsible for how items are aligned along the flexbox's CROSS AXIS */
-    /* flex-grow sets the rate to which a particular element grows depending on how much free space there is within the flexbox's MAIN AXIS */
-    /* flex-shrink sets the rate to which a particular element shrinks depending on how much free space there is within the flexbox's MAIN AXIS */
+    /* flex-grow sets the rate to which a particular element grows depending on how much free space there is within the flexbox's MAIN AXIS UPON RESIZING*/
+    /* flex-shrink sets the rate to which a particular element shrinks depending on how much free space there is within the flexbox's MAIN AXIS  UPON RESIZING*/
+    /* flex-basis sets the size to which a particular element can grow or shrink to depending on how much free space there is within the flexbox's MAIN AXIS */
 }
 
 #container div {
@@ -35,6 +36,8 @@ h1 {
     flex-basis: 500px;
     flex-grow: 1;
 }
+
+
 
 /* CSS for the colors of the divs */
 
@@ -62,4 +65,27 @@ section#container div:nth-of-type(5) {
     background-color: #6930c3;
     flex-grow: 2;
     /* align-self: flex-start; */
+}
+
+
+/* CSS for the second part of the demo, after the 'Another Example' heading */
+
+main    {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar   {
+    background-color: #6930c3;
+    flex: 1 250px;
+    border: 1px solid white;
+    
+}
+
+main .maincontent   {
+    background-color: #80ffdb;
+    flex: 1 600px ;
 }
