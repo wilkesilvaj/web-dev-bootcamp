@@ -1,9 +1,11 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
 h1 {
     text-align: center;
 }
+
 #container {
     background-color: #003049;
     width: 90%;
@@ -11,43 +13,45 @@ h1 {
     margin: 0 auto;
     border: 5px solid #003049;
     display: flex;
-    flex-direction: row; 
-    /* justify-content is responsible for how items are aligned along the flexbox's MAIN AXIS */
+    flex-direction: row;
     justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    /* align-content: center; */
+    /* justify-content is responsible for how items are aligned along the flexbox's MAIN AXIS */
+    /* flex-wrap is responsible for how items are DISTRIBUTED along the available space */
     /* flex-direction: column;  This makes the flexbox arrange items vertically (top to bottomm)*/
     /* flex-direction: row-reverse; This makes the flexbox arrange items from right to left*/
-
     /* align-items is responsible for how items are aligned along the flexbox's CROSS AXIS */
-    align-items: center;
-
-    /* flex-wrap is responsible for how items are DISTRIBUTED along the available space */
-    flex-wrap: wrap-reverse;
-
-    align-content: space-between;
-
-
-    
 }
 
-#container div  {
+#container div {
     width: 200px;
     height: 200px;
+    text-align: center;
 }
 
 /* CSS for the colors of the divs */
 
-section#container div:nth-of-type(1)    {
+section#container div:nth-of-type(1) {
     background-color: #80ffdb;
 }
-section#container div:nth-of-type(2)    {
+
+section#container div:nth-of-type(2) {
     background-color: #64dfdf;
+    align-self: center;
 }
-section#container div:nth-of-type(3)    {
+
+section#container div:nth-of-type(3) {
     background-color: #48bfe3;
 }
-section#container div:nth-of-type(4)    {
+
+section#container div:nth-of-type(4) {
     background-color: #5390d9;
+    align-self: flex-end;
 }
-section#container div:nth-of-type(5)    {
+
+section#container div:nth-of-type(5) {
     background-color: #6930c3;
 }
