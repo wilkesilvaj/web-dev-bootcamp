@@ -2,90 +2,19 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-h1,h2 {
+h1 {
+    font-size: 6em;
     text-align: center;
 }
-
-#container {
-    background-color: #003049;
-    width: 95%;
-    height: 500px;
-    margin: 0 auto;
-    border: 5px solid #003049;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    
-    /* align-content: center; */
-    /* justify-content is responsible for how items are aligned along the flexbox's MAIN AXIS */
-    /* flex-wrap is responsible for how items are DISTRIBUTED along the available space */
-    /* flex-direction: column;  This makes the flexbox arrange items vertically (top to bottomm)*/
-    /* flex-direction: row-reverse; This makes the flexbox arrange items from right to left*/
-    /* align-items is responsible for how items are aligned along the flexbox's CROSS AXIS */
-    /* flex-grow sets the rate to which a particular element grows depending on how much free space there is within the flexbox's MAIN AXIS UPON RESIZING*/
-    /* flex-shrink sets the rate to which a particular element shrinks depending on how much free space there is within the flexbox's MAIN AXIS  UPON RESIZING*/
-    /* flex-basis sets the size to which a particular element can grow or shrink to depending on how much free space there is within the flexbox's MAIN AXIS */
+nav {
+    font-size: 1.5em;
 }
 
-#container div {
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    flex-basis: 500px;
-    flex-grow: 1;
+ul,li {
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
 
 
 
-/* CSS for the colors of the divs */
-
-section#container div:nth-of-type(1) {
-    background-color: #80ffdb;
-    flex-grow: 1;
-
-}
-
-section#container div:nth-of-type(2) {
-    background-color: #64dfdf;
-    /* align-self: center; */
-}
-
-section#container div:nth-of-type(3) {
-    background-color: #48bfe3;
-}
-
-section#container div:nth-of-type(4) {
-    background-color: #5390d9;
-    /* align-self: flex-end; */
-}
-
-section#container div:nth-of-type(5) {
-    background-color: #6930c3;
-    flex-grow: 2;
-    /* align-self: flex-start; */
-}
-
-
-/* CSS for the second part of the demo, after the 'Another Example' heading */
-
-main    {
-    width: 80%;
-    margin: 0 auto;
-    border: 5px solid black;
-    height: 500px;
-    display: flex;
-}
-
-main .sidebar   {
-    background-color: #6930c3;
-    border: 1px solid white;
-    flex: 1 2 250px;
-    
-}
-
-main .maincontent   {
-    background-color: #80ffdb;
-    flex: 2 1 800px ;
-}
