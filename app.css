@@ -64,32 +64,60 @@ body    {
 }
 
 .panel  {
+    background-color: white;
     border-radius: 10px;
     padding: 15px 25px;
     width: 100%;
     max-width: 950px;
     display: flex;
-    flex-direction: row;
-    background-color: white;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
 
+.pricing-img {
+    margin-bottom: 25px;
+    width: 100%;
 }
 
 .pricing-plan   {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-bottom: 1px solid #e1f1ff;
 }
 
-h2.pricing-header   {
-    color: grey;
-    font-size: 1.1em;
-    text-transform: uppercase;
-    
+.pricing-plan:last-child   {
+    border-bottom: none;
 }
 
-li {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-    border-width: 60%;
+/* H2 Headings */
+.pricing-header {
+    font-weight: 600;
+    color: #888888;
+    letter-spacing: 1px;
 }
+
+.pricing-features   {
+    margin: 50px 0 25px;
+    color: #016ff9;
+
+}
+
+.pricing-features-item {
+    font-weight: 600;    
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+.pricing-features-item:last-child {    
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.pricing-price  {
+    color: #016ff9;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+}
+
