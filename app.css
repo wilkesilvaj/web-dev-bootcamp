@@ -24,3 +24,16 @@ body    {
 #headingGroup span  {
     color: #EA1C2C;
 }
+
+#headingGroup h1    {
+    font-weight: 100;
+    font-size: 3.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px)  {
+
+    #headingGroup h1 {
+        font-size: 3rem;
+    }
+}
