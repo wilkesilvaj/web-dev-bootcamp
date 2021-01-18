@@ -55,4 +55,8 @@ section {
     #headingGroup h1 {
         font-size: 3rem;
     }
+
+    section     {
+        margin-top: 0px;
+    }
 }
