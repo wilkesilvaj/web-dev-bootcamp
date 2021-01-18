@@ -1,148 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="app.css">
-    <title>Document</title>
-</head>
 
-<body>
-    <div class="container">
-        <h1 class="display text-center text-primary">Bootstrap Playground</h1>
-        <h2 class="display-4">Buttons <span class="badge bg-success">New</span></h2>
-        <button type="button" class="btn btn-primary">Primary</button>
-        <button type="button" class="btn btn-success">Success</button>
-        <button type="button" class="btn btn-info">Info</button>
-        <button type="button" class="btn btn-outline-warning">Warning Outline</button>
-        <button type="button" class="btn btn-outline-danger">Danger Outline</button>
-        <button type="button" class="btn btn-outline-info btn-lg">LG Info Outline</button>
-        <button type="button" class="btn btn-outline-info btn-lg">LG Info Outline</button>
-        <button type="button" class="btn btn-primary">Updates <span class="badge bg-primary">9</span></button>
-        <button type="button">A default button</button>
-        <h3>Button Groups</h3>
-        <div class="btn-group">
-            <button class="btn btn-warning">One</button>
-            <button class="btn btn-warning">Three</button>
-            <button class="btn btn-warning">Three</button>
-        </div>
-        <h3>Alerts</h3>
-        <div class="alert alert-danger alert-dismissible fade show">
-            <h4 class="alert-heading">Oh No!!</h4>
-            Danger! This is a crazy alert that is meant to scare you!
-            <button aria-label="close" class="btn-close" data-bs-dismiss="alert">
-            </button>
-        </div>
-        <h2 class="display-3">Typography</h2>
-        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem fugit doloremque aperiam
-            asperiores, ex ad,
-            atque a vitae laborum possimus quisquam. Praesentium, fuga. Culpa voluptates, vero eveniet beatae nostrum
-            et!
-        </p>
-        <blockquote class="blockquote text-end bg-light">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum itaque quibusdam voluptas nihil
-                cupiditate commodi reprehenderit qui, culpa possimus enim sequi officiis iste eligendi quam amet fugiat!
-                Perspiciatis, vitae eveniet.</p>
-            <footer class="blockquote-footer">Mr. Lorem Ipsum</footer>
-        </blockquote>
-    </div>
-
-    <div class="container">
-        <h1 class="display-1 text-center text-primary">The Grid System</h1>
-        <div class="row border border-2 border-dark">
-            <div class="col-6 bg-success">I AM 6 units</div>
-            <div class="col-6 bg-danger">I AM 6 units</div>
-        </div>
-        <div class="row border border-2 border-dark">
-            <div class="col-2 bg-warning">I AM 2 units</div>
-            <div class="col-8 bg-primary">I AM 8 units</div>
-            <div class="col-2 bg-dark text-white">I AM 2 units</div>
-        </div>
-        <div class="row border border-2 border-dark">
-            <div class="col bg-secondary">I AM AUTO SIZED</div>
-            <div class="col bg-primary">I AM AUTO SIZED</div>
-            <div class="col-5 bg-danger">I AM 5 UNITS</div>
-            <div class="col bg-success">I AM AUTO SIZED</div>
-        </div>
-        <h2 class="display-4">Responsive Grid</h2>
-        <div class="row border border-2 border-dark">
-            <div class="col-md-6 col-xl-3 bg-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum.</div>
-            <div class="col-md-6 col-xl-3 bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum.</div>
-            <div class="col-md-6 col-xl-3 bg-warning">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum.</div>
-            <div class="col-md-6 col-xl-3 bg-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum.</div>
-        </div>
-        <h2 class="display-3">Grid Alignment</h2>
-        <div class="row  align-items-center">
-            <div class="col-md-6 col-xl-3 bg-success">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum.</div>
-            <div class="col-md-6 col-xl-3 bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum. Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Ab eos modi minima, nobis non molestiae temporibus dolore! Iste magnam quibusdam dicta
-                magni eum quod praesentium aliquam amet, labore culpa nihil!Hic labore explicabo vitae, voluptates,
-                voluptas quis beatae voluptatum adipisci id natus veritatis praesentium reprehenderit laboriosam
-                temporibus inventore ipsam error dicta aspernatur debitis ratione. Excepturi aliquam odio eius optio
-                alias!</div>
-            <div class="col-md-6 col-xl-3 bg-warning">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum. Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Magnam laborum odio nesciunt illum cupiditate magni, optio, perferendis officiis
-                expedita quibusdam a inventore deserunt non nostrum eaque laudantium voluptatum at sapiente.</div>
-            <div class="col-md-6 col-xl-3 bg-primary align-self-end">Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Atque
-                recusandae aliquam, error
-                obcaecati provident possimus modi doloribus praesentium suscipit reiciendis eaque incidunt? Iusto
-                tenetur porro explicabo tempora dignissimos laborum rerum.</div>
-        </div>
-        <h3>Justify Content</h3>
-        <div class="row border justify-content-center justify-content-lg-start justify-content-xl-between" >
-            <div class="col-md-4 bg-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo blanditiis tempora
-                voluptas iure eos soluta odit aliquid sunt autem id eius earum nulla praesentium, maxime aut dolore
-                possimus. Repellendus, aut.</div>
-            <div class="col-4 bg-warning">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo blanditiis tempora
-                voluptas iure eos soluta odit aliquid sunt autem id eius earum nulla praesentium, maxime aut dolore
-                possimus. Repellendus, aut.</div>
-        </div>
-        <h2><a href="forms.html">FORMS DEMO!</a></h2>
-    </div>
-
-    <div class="row">
-        <div class="col-xl-4 col-md-6">
-            <img src="https://images.unsplash.com/photo-1548531984-752cdc60dc60?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Adorable husky" class="img-fluid">
-        </div>
-        <div class="col-xl-4 col-md-6">
-            <img src="https://images.unsplash.com/photo-1550952080-c2c26881b9d9?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                alt="Lovely dog licking his nose" class="img-fluid">
-        </div>
-        <div class="col-xl-4 col-md-6">
-            <img src="https://images.unsplash.com/photo-1567794610436-1cd7b63a9360?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=781&q=80"
-                alt="baloon dogs" class="img-fluid">
-        </div>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
-</body>
-
+    <title>Museum of Candy</title>
+  </head>
+  
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+  </body>
 </html>
