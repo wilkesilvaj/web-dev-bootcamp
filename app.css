@@ -48,6 +48,11 @@ section {
 }
 
 
+.navbar.scrolled  {
+    background: rgb(222,192,222);
+   
+}
+
 
 /* Media Queries */
 @media (max-width: 1200px)  {
