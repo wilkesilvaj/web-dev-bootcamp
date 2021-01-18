@@ -19,9 +19,9 @@
   
   <body>
 
-      <nav id = "mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md">
+      <nav id = "mainNavbar" class="navbar navbar-dark navbar-expand-md py-0 fixed-top">
         <a href="#" class="navbar-brand">CANDY</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="Toggle navigation bar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div id="navLinks" class="collapse navbar-collapse">
@@ -37,8 +37,19 @@
               </li>
             </ul>
         </div>
-
       </nav>
+
+      <section class="container-fluid px-0">
+        <div class="row">
+          <div class="col-6">
+            <h2>Museum of Candy</h2>
+          </div>
+          <div class="col-6">
+            <img class = "img-fluid" src="./imgs/hand2.png" alt="hand image">
+          </div>
+        </div>
+      </section>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
