@@ -28,3 +28,34 @@ console.log(wowClasses);
 wowClasses.pop();
 console.log(wowClasses);
 
+//  Example of a nested array
+const gameBoard = [['X','0','X'],['0',null, 'X'], ['0','0','X']];
+
+
+// Example of an object
+const person =  {
+    firstName: 'John',
+    lastName: 'Wilke Silva',
+    age: 27,
+    height: 1.80,
+    weight: 85
+};
+
+// Prints all the information from the object
+console.log(person);
+
+// Prints only the person's age
+console.log(person.age);
+
+
+const restaurant = {
+    name: 'Ichiran Ramen',
+    address: `${Math.floor(Math.random() * 100) + 1} Johnson Ave`,
+    city: 'Brooklyn',
+    state: 'NY',
+    zipcode: '11206'
+}
+
+let fullAddress = restaurant.address + ',' + restaurant.city +',' + restaurant.state + ',' +restaurant.zipcode;
+
+console.log(fullAddress);
