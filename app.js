@@ -76,3 +76,11 @@ console.log("Looping through an Array / Iterating an Array Demo");
 for (let i = 0; i < wowClasses.length; i++) {
     console.log(wowClasses[i]);
 }
+
+console.log("Nested Loops Demo");
+for (let i = 0; i < 5; i++) {
+    console.log("Outer Loop "+ i);
+    for (let c = 6; c >=0 ; c-=2){
+        console.log("Inner Loop: " + c);
+    }
+}
