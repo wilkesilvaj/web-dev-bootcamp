@@ -101,3 +101,13 @@ for (let i = 0; i <seatingChart.length; i++)    {
         console.log(seatingChart[i][c]);
     }
 }
+
+//  Example of a while loop which breaks once the user types 'quit'. The loop verification is intentionally bad just to show the 'break' command
+let input = prompt("Say something!");
+while (true)    {
+    input = prompt(input);
+    if (input === "quit")   {
+        alert("Attaboy / Attagirl!");
+        break;
+    }
+}
