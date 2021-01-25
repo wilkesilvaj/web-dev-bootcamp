@@ -29,8 +29,11 @@ wowClasses.pop();
 console.log(wowClasses);
 
 //  Example of a nested array
-const gameBoard = [['X','0','X'],['0',null, 'X'], ['0','0','X']];
-
+const gameBoard = [
+    ['X','0','X'],
+    ['0',null, 'X'], 
+    ['0','0','X']
+];
 
 // Example of an object
 const person =  {
@@ -80,7 +83,21 @@ for (let i = 0; i < wowClasses.length; i++) {
 console.log("Nested Loops Demo");
 for (let i = 0; i < 5; i++) {
     console.log("Outer Loop "+ i);
-    for (let c = 6; c >=0 ; c-=2){
+    for (let c = 6; c >0 ; c-=2){
         console.log("Inner Loop: " + c);
+    }
+}
+
+// Nested Arrays for a seating chart example
+const seatingChart = [
+    ['John','Alina','Adal'],
+    ['Lucas','Queiroz', 'Danillin'], 
+    ['Hardil','Deepak','Alexandre']
+];
+
+for (let i = 0; i <seatingChart.length; i++)    {
+    console.log ("Row #" + i);
+    for (let c = 0; c < seatingChart[i].length; c++)    {
+        console.log(seatingChart[i][c]);
     }
 }
