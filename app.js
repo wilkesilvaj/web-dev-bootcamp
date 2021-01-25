@@ -111,3 +111,28 @@ while (true)    {
         break;
     }
 }
+
+console.log("'For Of' / Foreach Demo");
+for (let classes of wowClasses) {
+    console.log("The current class of WoW is " + classes);
+}
+
+const testScores = {
+    Kenan: 90,
+    Kel: 99,
+    Drake: 50,
+    Josh: 40,
+    Bob: 51,
+    Patrick: 46
+}
+
+
+// Loop iterates through an Object
+// Remember the 'Object' keyword
+// Object.entries returns an array for each property within an object
+let totalGrades = 0;
+for (let student of Object.entries(testScores)) {
+    console.log(`${student[0]} scored ${student[1]}`);
+    totalGrades += student[1];
+}
+console.log(`The sum of grades is ${totalGrades}`);
