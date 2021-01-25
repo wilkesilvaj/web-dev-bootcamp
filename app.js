@@ -59,3 +59,20 @@ const restaurant = {
 let fullAddress = restaurant.address + ',' + restaurant.city +',' + restaurant.state + ',' +restaurant.zipcode;
 
 console.log(fullAddress);
+
+console.log("Loops demo!");
+
+for (let i = 1; i <= 10; i++)   {
+    console.log("Example of 'for loops' " + i);
+}
+
+let count = 5;
+while (count < 10)   {
+    console.log("Example of 'while loops' " + count)
+    count++;
+}
+
+console.log("Looping through an Array / Iterating an Array Demo");
+for (let i = 0; i < wowClasses.length; i++) {
+    console.log(wowClasses[i]);
+}
