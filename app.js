@@ -136,3 +136,20 @@ for (let student of Object.entries(testScores)) {
     totalGrades += student[1];
 }
 console.log(`The sum of grades is ${totalGrades}`);
+
+// Declare a very simple & silly song
+function singSong() {
+    console.log("DO");
+    console.log("RE");
+    console.log("MI");
+}
+
+// Calls the "singSong" function
+singSong();
+
+function greet(name)    {
+    console.log(`Greetings,${name}`);
+}
+
+greet("Jack");
+
