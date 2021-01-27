@@ -103,14 +103,14 @@ for (let i = 0; i <seatingChart.length; i++)    {
 }
 
 //  Example of a while loop which breaks once the user types 'quit'. The loop verification is intentionally bad just to show the 'break' command
-let input = prompt("Say something!");
-while (true)    {
-    input = prompt(input);
-    if (input === "quit")   {
-        alert("Attaboy / Attagirl!");
-        break;
-    }
-}
+// let input = prompt("Say something!");
+// while (true)    {
+//     input = prompt(input);
+//     if (input === "quit")   {
+//         alert("Attaboy / Attagirl!");
+//         break;
+//     }
+// }
 
 console.log("'For Of' / Foreach Demo");
 for (let classes of wowClasses) {
@@ -153,3 +153,37 @@ function greet(name)    {
 
 greet("Jack");
 
+
+function returnDay(number)  {
+    if (number > 7 || number < 1)   
+        return null;
+    else    {
+        switch (number) {
+            case 1:
+                return "Monday";
+                break;
+            case 2:
+                return "Tuesday";
+                break;
+            case 3:
+                return "Wednesday";
+                break;
+            case 4:
+                return "Thursday";
+                break;
+            case 5:
+                return "Friday";
+                break;
+            case 6:
+                return "Saturday";
+                break;
+            case 7:
+                return "Sunday";
+                break;            
+        }
+    }  
+}  
+
+const add = function (x,y)  {
+    return x + y;
+}
