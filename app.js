@@ -52,5 +52,23 @@ console.log("******** Using Arrow Functions within the MAP method ********");
 const newMovies = movies.map(movie => {
     return `${movie.title} - ${movie.score / 10}`;
 });
-
 console.log(newMovies);
+
+// The following code is after 3 seconds
+console.log("******** SetTimeOut Demo ********");
+setTimeout(() =>    {
+    console.log("I'm printed ONCE after 3 secs!");
+},3000);
+
+// The following code is repeated every 2 seconds
+const randomNumberId = setInterval(() => {
+    console.log(Math.random());
+},2000);
+
+// The following is used to clear the interval
+// clearInterval(randomNumberId);
+
+
+
+
+
