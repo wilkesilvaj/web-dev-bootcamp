@@ -28,3 +28,7 @@ console.log ("******** Using 'For OF' ********");
 for (let movie of movies)   {
     console.log(`${movie.title} - ${movie.score}/100`);
 }
+
+movies.map(function(movie)  {
+    return movie.title.toUpperCase();
+});
