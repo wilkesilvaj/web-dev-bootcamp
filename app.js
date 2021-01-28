@@ -56,14 +56,14 @@ console.log(newMovies);
 
 // The following code is after 3 seconds
 console.log("******** SetTimeOut Demo ********");
-setTimeout(() =>    {
+setTimeout(() => {
     console.log("I'm printed ONCE after 3 secs!");
-},3000);
+}, 3000);
 
-// The following code is repeated every 2 seconds
+// The following code is repeated every 10 seconds
 const randomNumberId = setInterval(() => {
     console.log(Math.random());
-},2000);
+}, 10000);
 
 // The following is used to clear the interval
 // clearInterval(randomNumberId);
@@ -79,9 +79,17 @@ const goodTitles = goodMovies.map(m => m.title);
 console.log(goodTitles);
 
 // This is an example of using 'map' on the returned array from a 'filter' method
-const greatMovies = movies.filter(m=> m.score >85).map(m => m.title);
+const greatMovies = movies.filter(m => m.score > 85).map(m => m.title);
 console.log(greatMovies);
 
+// Gets the highest rated movie from my array of movies
+const highestRated = movies.reduce((bestMovie, currentMovie) => {
+    if (currentMovie.score > bestMovie.score)   {
+        return currentMovie;    
+    }
+        return bestMovie;
+});
+console.log(`The highest rated movie is ${highestRated.title} with a score of ${highestRated.score}/100`);
 
 
 
