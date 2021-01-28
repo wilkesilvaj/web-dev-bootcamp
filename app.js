@@ -68,6 +68,20 @@ const randomNumberId = setInterval(() => {
 // The following is used to clear the interval
 // clearInterval(randomNumberId);
 
+// const goodMovies = movies.filter(() => {
+//     return movie.score > 80;
+// })
+
+const goodMovies = movies.filter(m => m.score > 85)
+console.log(goodMovies);
+
+const goodTitles = goodMovies.map(m => m.title);
+console.log(goodTitles);
+
+// This is an example of using 'map' on the returned array from a 'filter' method
+const greatMovies = movies.filter(m=> m.score >85).map(m => m.title);
+console.log(greatMovies);
+
 
 
 
