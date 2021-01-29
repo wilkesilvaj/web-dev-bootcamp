@@ -31,5 +31,23 @@ const cloneNums = [...nums];
 const mutantNums = [...nums, ...nums2];
 
 
+// The rest operator allows the function to combine all the "extra" or multiple arguments in a function and combine them into an array.
 
 
+// The following function will ONLY work if the user inputs the data as an array. e.g: [1,2,3,4]
+function sumAllNumbers(nums)    {
+   return nums.reduce((total, el)=> total + el);
+}
+
+// The following function works EVEN IF THE USER JUST INPUTS MANY NUMBERS SEPARATED BY A COMMA
+//  It will combine all the numbers provided into 1 array called 'nums'
+function sumAllNumbersRest(...nums)    {
+    return nums.reduce((total, el)=> total + el);
+ }
+
+
+ function raceResults(gold, silver, ...everyoneElse)    {
+     console.log(`THE GOLD MEDAL GOES TO ${gold}`);
+     console.log(`THE SILVER MEDAL GOES TO ${silver}`);
+     console.log(`AND A SPECIAL THANKS TO  ${everyoneElse}`);
+ }
