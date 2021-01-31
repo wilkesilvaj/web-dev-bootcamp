@@ -9,14 +9,19 @@ const allImages = document.getElementsByTagName('img');
 
 const squareImages = document.getElementsByClassName('square');
 // const squareImages = document.querySelectorAll('.square');
-
-
-for (let img of squareImages) {
-    img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Silky_bantam.jpg/440px-Silky_bantam.jpg';
-}
+// for (let img of squareImages) {
+//     img.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Silky_bantam.jpg/440px-Silky_bantam.jpg';
+// }
 
 const links = document.querySelectorAll('p a');
 
 for (let link of links) {
     console.log(link.href)
 }
+
+// The following code is about manipulating TEXT content in HTML elements
+
+document.querySelector('h1').innerText = "Lol, I am modifying the first H1's content";
+document.querySelector('h1').innerHTML += "<sup>With INNER HTML!</sup>";
+
+
