@@ -25,3 +25,8 @@ document.querySelector('h1').innerText = "Lol, I am modifying the first H1's con
 document.querySelector('h1').innerHTML += "<sup>With INNER HTML!</sup>";
 
 
+// The following code is about retrieving and manipulating different attributes from elements
+
+const firstImg = document.querySelector('img');
+firstImg.alt = "Modified the 'alt' property of the first image";
+firstImg.setAttribute("alt","Modified the 'alt' property Again!");
