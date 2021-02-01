@@ -11,6 +11,9 @@ for (i = 1 ; i<= 151; i++)  {
     // Adds the desired content to the elements
     pokemonImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${i}.png`;
     pokemonNumber.innerText = `#${i}`;
+    
+    // Adds the CSS class to the pokemonContainer
+    pokemonContainer.classList.add('pokemon');
 
     // Appends the image and span to the 'eachPokemon' container
     pokemonContainer.appendChild(pokemonImage);
