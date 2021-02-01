@@ -40,3 +40,7 @@ for (let link of allLinks)  {
     link.style.textDecorationColor = 'magenta';
 }
 
+// The following code modifies the style of the 'h2 tags through adding or removing css classes
+const h2 = document.querySelector('h2');
+h2.classList.add('purple');
+h2.classList.add('border');
