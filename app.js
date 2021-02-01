@@ -30,3 +30,13 @@ document.querySelector('h1').innerHTML += "<sup>With INNER HTML!</sup>";
 const firstImg = document.querySelector('img');
 firstImg.alt = "Modified the 'alt' property of the first image";
 firstImg.setAttribute("alt","Modified the 'alt' property Again!");
+
+
+// The following code modifies the style of all 'a' tags through the '.style', which creates inline styles for the elements
+const allLinks = document.querySelectorAll('a');
+for (let link of allLinks)  {
+    link.style.color = 'rgb(0,108,134)';
+    link.style.textDecorationStyle = 'wavy';
+    link.style.textDecorationColor = 'magenta';
+}
+
