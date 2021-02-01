@@ -44,3 +44,21 @@ for (let link of allLinks)  {
 const h2 = document.querySelector('h2');
 h2.classList.add('purple');
 h2.classList.add('border');
+
+
+// The following code appends / adds new elements to the body of the page (at the end)
+const newH3 = document.createElement('h3');
+newH3.innerText = "I am a new H3!";
+document.body.appendChild(newH3);
+
+// The following code adds some extra text AT THE END of the first paragraph
+const p = document.querySelector('p');
+p.append("I am new text! Yaaaay!");
+
+// The following code adds a new 'h2' element between the first 'h1' and the first image
+const newH2 = document.createElement('h2');
+newH2.append('Are adorable chickens!');
+
+// Gets the position of the H1 to insert the 'newH2' element after it
+const h1 = document.querySelector('h1');
+h1.insertAdjacentElement('afterend',newH2);
