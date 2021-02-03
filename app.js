@@ -26,5 +26,28 @@ const randomizeColor = () =>    {
     document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
 }
 
-
+// Event handler that changes the background color
 colorBtn.addEventListener('click', randomizeColor);
+
+
+// Creates the event that return a random color
+const randomizeButtonColor =  ()  =>    {
+    let r = Math.floor(Math.random()*255 + 1);
+    let g = Math.floor(Math.random()*255 + 1);
+    let b = Math.floor(Math.random()*255 + 1);
+    return `rgb(${r},${g},${b})`;
+}
+
+// Get all the buttons with the class of colors
+const colorChangingButtons = document.querySelectorAll(".colors");
+
+// Iterates through the list of buttons and add the event listener to each button
+for (let button of colorChangingButtons)    {
+    button.addEventListener('click', colorize);
+}
+
+function colorize() {
+    this.style.backgroundColor = randomizeButtonColor();
+    this.style.color = randomizeButtonColor();
+    
+}
