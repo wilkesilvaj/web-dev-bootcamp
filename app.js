@@ -9,3 +9,9 @@ function scream() {
 }
 
 btn.onmouseover =   scream;
+
+const btn3 = document.querySelector('#v3');
+
+btn3.addEventListener('click', () =>    {
+    alert("You have clicked on button #3!")
+})
