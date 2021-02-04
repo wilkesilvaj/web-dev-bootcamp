@@ -48,6 +48,26 @@ for (let button of colorChangingButtons)    {
 
 function colorize() {
     this.style.backgroundColor = randomizeButtonColor();
-    this.style.color = randomizeButtonColor();
-    
+    this.style.color = randomizeButtonColor();    
 }
+
+// This captures each key press on the web page and checks if its an ARROW KEY
+window.addEventListener('keydown', function(e)  {
+    switch(e.code)  {
+        case 'ArrowUp':
+        console.log("UP!");
+        break;
+        case 'ArrowDown':
+        console.log("DOWN!");
+        break;
+        case 'ArrowRight':
+        console.log("RIGHT!");
+        break;
+        case 'ArrowLeft':
+        console.log("LEFT!");
+        break;
+        default:
+        console.log("Not an Arrow!");
+        break;
+    }
+});
