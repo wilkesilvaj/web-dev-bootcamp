@@ -90,7 +90,7 @@ tweetForm.addEventListener('submit', function(e)    {
     
     
     // Method #2 - Using the 'FormElement'.elements'     
-    newTweet.innerHTML = `<b>${tweetForm.elements.username.value}</b> tweeted "${tweetForm.elements.tweet.value}"`   
+    newTweet.innerHTML = `${tweetForm.elements.username.value} tweeted "${tweetForm.elements.tweet.value}"`   
     tweetForm.elements.username.value = ""; 
     tweetForm.elements.tweet.value = ""; 
     
@@ -99,6 +99,17 @@ tweetForm.addEventListener('submit', function(e)    {
     document.querySelector('#tweets').appendChild(newTweet);
 });
 
+// Event Delegation
+const tweetsContainer = document.querySelector("#tweets");
+tweetsContainer.addEventListener('click', (e) =>    {
+    
+    if (e.target.nodeName === 'LI') {
+        e.target.remove();
+    }
+
+    // The following line does the same thing as the IF statement
+    // e.target.nodeName === 'LI' && e.target.remove();
+});
 
 // Event Bubbling Demo
 
