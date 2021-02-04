@@ -94,7 +94,31 @@ tweetForm.addEventListener('submit', function(e)    {
     tweetForm.elements.username.value = ""; 
     tweetForm.elements.tweet.value = ""; 
     
+
     // Appends the new list item to the tweet list
     document.querySelector('#tweets').appendChild(newTweet);
 });
+
+
+// Event Bubbling Demo
+
+// Get the 2 elements
+const colorButton2 = document.querySelector("#colorButton");
+const colorButtonContainer = document.querySelector("#container");
+
+
+
+colorButtonContainer.addEventListener("click", function()   {
+    colorButtonContainer.classList.toggle('hide');
+});
+
+colorButton2.addEventListener('click', (e) =>   {
+    // This prevent the Event bubbling    
+    colorButtonContainer.style.backgroundColor = randomizeButtonColor();
+    e.stopPropagation();
+
+});
+
+
+
 
