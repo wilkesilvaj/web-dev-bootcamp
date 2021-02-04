@@ -71,3 +71,30 @@ window.addEventListener('keydown', function(e)  {
         break;
     }
 });
+
+// Form Events Code
+const tweetForm = document.querySelector('#tweetForm');
+tweetForm.addEventListener('submit', function(e)    {
+    // This prevents the default behavior of the event, which is the redirection to the desired page
+    e.preventDefault();
+
+    // Creates a new list item
+    const newTweet = document.createElement('li');
+    
+    // Method #1 - Using querySelector
+    // const username = document.querySelector("#username");
+    // const tweet = document.querySelector("#tweet");    
+    // newTweet.innerHTML = `<b>${username.value}</b> tweeted "${tweet.value}"`;
+    // username.value = "";
+    // tweet.value = "";
+    
+    
+    // Method #2 - Using the 'FormElement'.elements'     
+    newTweet.innerHTML = `<b>${tweetForm.elements.username.value}</b> tweeted "${tweetForm.elements.tweet.value}"`   
+    tweetForm.elements.username.value = ""; 
+    tweetForm.elements.tweet.value = ""; 
+    
+    // Appends the new list item to the tweet list
+    document.querySelector('#tweets').appendChild(newTweet);
+});
+
