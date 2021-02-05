@@ -15,12 +15,12 @@ const score  =   {
 // Event listeners
 
 // Increases player one's score
-btnPlayerOne.addEventListener('click', function ()  {
-  
-     const maxPoints = pointsSelect[pointsSelect.selectedIndex].value;      
+btnPlayerOne.addEventListener('click', function ()  {  
+        
+     const maxPoints = parseInt(pointsSelect.value);      
     score.p1++;
     scoreP1.innerText = `${score.p1}`;
-    if (score.p1 == maxPoints) {
+    if (score.p1 === maxPoints) {
         
         scoreP1.classList.toggle('green');
         scoreP2.classList.toggle('red');  
@@ -33,10 +33,11 @@ btnPlayerOne.addEventListener('click', function ()  {
 
 // Increases player two's score
 btnPlayerTwo.addEventListener('click', function ()  {
-    const maxPoints = pointsSelect[pointsSelect.selectedIndex].value;  
+ 
+    const maxPoints = parseInt(pointsSelect.value);
     score.p2++;
     scoreP2.innerText = `${score.p2}`;
-    if (score.p2 == maxPoints) {
+    if (score.p2 === maxPoints) {
         scoreP2.classList.toggle('green');
         scoreP1.classList.toggle('red');   
         
