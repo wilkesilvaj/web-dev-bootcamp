@@ -23,7 +23,11 @@ btnPlayerOne.addEventListener('click', function ()  {
     if (score.p1 == maxPoints) {
         
         scoreP1.classList.toggle('green');
-        scoreP2.classList.toggle('red');        
+        scoreP2.classList.toggle('red');  
+        
+        // Disable the buttons
+        btnPlayerOne.disabled = true;     
+        btnPlayerTwo.disabled = true;  
     }
 }); 
 
@@ -34,15 +38,23 @@ btnPlayerTwo.addEventListener('click', function ()  {
     scoreP2.innerText = `${score.p2}`;
     if (score.p2 === maxPoints) {
         scoreP2.classList.toggle('green');
-        scoreP1.classList.toggle('red');        
+        scoreP1.classList.toggle('red');   
+        
+        // Disable the buttons
+        btnPlayerOne.disabled = true;     
+        btnPlayerTwo.disabled = true;     
     }
 });
 
 
 // Reset the game
 btnReset.addEventListener('click', ()   =>  {
+    
+    score.p1 = 0;
+    score.p2 = 0;
+    
     btnPlayerOne.disabled = false;
-    btnPlayerTwo.disable = false;
+    btnPlayerTwo.disabled = false;
 
     // Resets score
     scoreP1.innerText = "0";
