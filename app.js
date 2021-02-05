@@ -1,5 +1,5 @@
 // initialize variables
-const maxPoints = parseInt(document.querySelector('#maxPoints'));
+const pointsSelect = document.querySelector('#maxPoints');
 const scoreP1 = document.querySelector('#scoreP1');
 const scoreP2 = document.querySelector('#scoreP2');
 
@@ -16,9 +16,12 @@ const score  =   {
 
 // Increases player one's score
 btnPlayerOne.addEventListener('click', function ()  {
+  
+     const maxPoints = pointsSelect[pointsSelect.selectedIndex].value;      
     score.p1++;
     scoreP1.innerText = `${score.p1}`;
-    if (score.p1 === maxPoints) {
+    if (score.p1 == maxPoints) {
+        
         scoreP1.classList.toggle('green');
         scoreP2.classList.toggle('red');        
     }
@@ -26,6 +29,7 @@ btnPlayerOne.addEventListener('click', function ()  {
 
 // Increases player two's score
 btnPlayerTwo.addEventListener('click', function ()  {
+    const maxPoints = pointsSelect[pointsSelect.selectedIndex].value;  
     score.p2++;
     scoreP2.innerText = `${score.p2}`;
     if (score.p2 === maxPoints) {
@@ -39,7 +43,16 @@ btnPlayerTwo.addEventListener('click', function ()  {
 btnReset.addEventListener('click', ()   =>  {
     btnPlayerOne.disabled = false;
     btnPlayerTwo.disable = false;
-    score.innerText = "0 to 0";
+
+    // Resets score
+    scoreP1.innerText = "0";
+    scoreP2.innerText = "0";
+    
+    // Removes the styling from the test
+    scoreP1.classList.remove('green');
+    scoreP1.classList.remove('red');
+    scoreP2.classList.remove('green');
+    scoreP2.classList.remove('red');
 });
 
 
