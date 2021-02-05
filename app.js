@@ -36,7 +36,7 @@ btnPlayerTwo.addEventListener('click', function ()  {
     const maxPoints = pointsSelect[pointsSelect.selectedIndex].value;  
     score.p2++;
     scoreP2.innerText = `${score.p2}`;
-    if (score.p2 === maxPoints) {
+    if (score.p2 == maxPoints) {
         scoreP2.classList.toggle('green');
         scoreP1.classList.toggle('red');   
         
