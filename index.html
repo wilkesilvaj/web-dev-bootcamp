@@ -10,28 +10,51 @@
 </head>
 
 <body>
-    <main>
-        <section>
-            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1375&q=80" alt="Ping pong racket">
-            <h4>Ping Pong Score Keeper</h4>
-            <h2><span id = "scoreP1">0</span> to <span id ="scoreP2">0</span></h2>
-            <h5>Use the buttons below to keep score</h5>
-            <h5>Playing to </h5>
-            <select name="maxPoints" id="maxPoints">
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-            </select>
-            <br>
-            <button id="playerOne" class = "btn btn-success">+1 Player One</button>
-            <button id="playerTwo" class = "btn btn-primary">+1 Player Two</button>
-            <button id="reset" class = "btn btn-danger">Reset</button>
-        </section>
-    </main>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image is-2by1">
+                            <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1375&q=80"
+                                alt="Ping pong racket">
+                        </figure>
+                    </div>
+                    <header class="card-header">
+                        <p class="card-header-title">
+                            Ping Pong Score Keeper
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="scoreP1">0</span> to <span id="scoreP2">0</span></h1>
+                            <p>Use the buttons below to keep score</p>
+                            <label for="maxPoints" class = "label is-large is-inline">Playing To</label>
+                            <div class="select is-rounded">
+                                <select name="maxPoints" id="maxPoints">
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="playerOne" class="card-footer-item button is-success">+1 Player One</button>
+                        <button id="playerTwo" class="card-footer-item button is-primary">+1 Player Two</button>
+                        <button id="reset" class="card-footer-item btn button is-danger">Reset</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="app.js"></script>
 </body>
 
