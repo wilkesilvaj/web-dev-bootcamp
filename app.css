@@ -7,3 +7,11 @@ img {
     max-width: 400px;
     max-height: 200px;
 }
+
+.red    {
+    color: red;    
+}
+
+.green  {
+    color: green;
+}
