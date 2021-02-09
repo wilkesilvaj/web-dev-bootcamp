@@ -1,23 +1,20 @@
-const fakeRequest = (url) =>    {
-    return new Promise((resolve, reject)    =>  {
-        const rand = Math.random();
-        setTimeout(() =>    {
-            if (rand < 0.7) {
-                resolve('YOUR FAKE DATA HERE')
-            }
-            reject('Request Error!');
-            
-        }, 2000)
-    })
 
-};
+//  This is valid syntax
+// async function sing()   {
 
-fakeRequest('fakeUrl.com')
-    .then((data) => {
-        console.log('DONE WITH REQUEST');
-        console.log(data);
-    })    
-    .catch((err) => {
-        console.log('Oh no!', err);       
-    })
-    
+// }
+
+// Asynchronous functions automatically create
+// Promises for you. In order to fulfill the Promise:
+// • you must return a value
+// To 'fail' the Promise, you must:
+// • 'throw' something, regardless if its an error, a String, etc
+
+// This is also valid syntax
+const sing = async ()   =>  {
+    if (Math.random() <= 0.7)   {
+        return "Do Re Mi Fa Sol La Si Do";
+    }
+    throw "You cannot sing!";
+
+}
