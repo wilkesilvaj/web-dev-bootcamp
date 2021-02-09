@@ -33,8 +33,8 @@ const login = async (username, password) => {
     if (password === '123456') return `Welcome, ${username}`;
     throw 'Password error';
 
-    
-    
+
+
 }
 
 login('Johnny', '987654')
@@ -46,8 +46,8 @@ login('Johnny', '987654')
         console.log("LOGIN FAILED!");
         console.log(err)
     })
-    
-login("Alina",'123456')
+
+login("Alina", '123456')
     .then(msg => {
         console.log("LOGIN SUCCESFUL!");
         console.log(msg);
@@ -58,26 +58,37 @@ login("Alina",'123456')
     })
 
 
-    //  Function to change the background color
-    const delayedColorChange = (color, delay)   =>  {
-        return new Promise((resolve, reject) =>   {
-            setTimeout(()   =>  {
-                document.body.style.backgroundColor = color;
-                resolve();
-            }, delay);
-        })      
-    }
+//  Function to change the background color
+const delayedColorChange = (color, delay) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            document.body.style.backgroundColor = color;
+            resolve();
+        }, delay);
+    })
+}
 
-    // The following async function uses the 'await' keyword, which WAITS for a promise to be returned BEFORE moving onto the next one
-    async function rainbow()    {
-        await delayedColorChange('red',1000);
-        await delayedColorChange('orange',1000);
-        await delayedColorChange('yellow',1000);
-        await delayedColorChange('green',1000);
-        await delayedColorChange('blue',1000);
-    }
+// The following async function uses the 'await' keyword, which WAITS for a promise to be returned BEFORE moving onto the next one
+async function rainbow() {
+    await delayedColorChange('red', 1000);
+    await delayedColorChange('orange', 1000);
+    await delayedColorChange('yellow', 1000);
+    await delayedColorChange('green', 1000);
+    await delayedColorChange('blue', 1000);
+}
 
-    rainbow();
-  
-    
+// The following code works and prints after the rainbow() function works
+// rainbow()
+//     .then(() => {
+//         console.log("END OF RAINBOW!");
+//     });
+
+
+async function printRainbow()   {
+    await rainbow();
+    console.log("END OF RAINBOW!");
+}
+printRainbow();
+
+
 
