@@ -18,3 +18,12 @@ const sing = async ()   =>  {
     throw "You cannot sing!";
 
 }
+
+sing()
+    .then(data =>   {
+        console.log("Promise resolved with ",data);
+    })
+    .catch(err =>   {
+        console.log("Promise failed, ",err);
+    })
+
