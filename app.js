@@ -56,6 +56,28 @@ login("Alina",'123456')
         console.log("LOGIN FAILED!");
         console.log(err)
     })
+
+
+    //  Function to change the background color
+    const delayedColorChange = (color, delay)   =>  {
+        return new Promise((resolve, reject) =>   {
+            setTimeout(()   =>  {
+                document.body.style.backgroundColor = color;
+                resolve();
+            }, delay);
+        })      
+    }
+
+    // The following async function uses the 'await' keyword, which WAITS for a promise to be returned BEFORE moving onto the next one
+    async function rainbow()    {
+        await delayedColorChange('red',1000);
+        await delayedColorChange('orange',1000);
+        await delayedColorChange('yellow',1000);
+        await delayedColorChange('green',1000);
+        await delayedColorChange('blue',1000);
+    }
+
+    rainbow();
   
     
 
