@@ -12,5 +12,12 @@ const fakeRequest = (url) =>    {
 
 };
 
-
+fakeRequest('fakeUrl.com')
+    .then((data) => {
+        console.log('DONE WITH REQUEST');
+        console.log(data);
+    })    
+    .catch((err) => {
+        console.log('Oh no!', err);       
+    })
     
