@@ -52,11 +52,17 @@ fetchBitcoinPriceAxios();
 
 // Example of fetching an API which demands a specific header
 const getDadJoke = async()  =>  {
+
+    try {   
     // Creates an object to hold the required configurations
     const config = {headers: {Accept: 'application/json'}   };
     const res = await axios.get('https://icanhazdadjoke.com/', config);
     console.log(res.data.joke);
     return res.data.joke;
+    }
+    catch (e)   {
+        console.log("COULDN'T FETCH JOKE, SORRY!")
+    }
 }
 
 const addNewJoke = async() =>  {
