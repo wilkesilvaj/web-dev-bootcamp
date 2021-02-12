@@ -34,3 +34,17 @@ axios.get('https://api.cryptonator.com/api/ticker/btc-usd')
     console.log("Error", e);
 })
 
+
+
+// Recreated the async function to get the data, but now using AXIOS
+const fetchBitcoinPriceAxios = async()  =>  {
+    try{    
+    const res = await axios.get('https://api.cryptonator.com/api/ticker/btc-usd')
+    console.log('Data acquired with AXIOS in an ASYNC function', res.data.ticker.price);
+    }
+    catch(e)    {
+        console.log("ERROR :",e);
+    }
+}
+
+fetchBitcoinPriceAxios();
