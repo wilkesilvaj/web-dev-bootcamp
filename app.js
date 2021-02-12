@@ -48,3 +48,14 @@ const fetchBitcoinPriceAxios = async()  =>  {
 }
 
 fetchBitcoinPriceAxios();
+
+
+// Example of fetching an API which demands a specific header
+const getDadJoke = async()  =>  {
+    // Creates an object to hold the required configurations
+    const config = {headers: {Accept: 'application/json'}   };
+    const res = await axios.get('https://icanhazdadjoke.com/', config);
+    console.log('Have you heard this one yet?', res.data.joke);
+}
+
+getDadJoke();
