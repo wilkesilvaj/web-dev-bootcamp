@@ -4,7 +4,7 @@ fetch('https://api.cryptonator.com/api/ticker/btc-usd')
         // The following method returns another PROMISE, for the actual data within the first FETCH to be parsed into JSON
         return result.json();
     })
-    .then(data =>   {
+    .then(data => {
         console.log("DATA SUCCESSFULLY PARSED!");
         console.log(data.ticker.price);
     })
@@ -12,3 +12,16 @@ fetch('https://api.cryptonator.com/api/ticker/btc-usd')
         console.log('ERROR!');
     })
 
+
+const fetchBitcoinPrice = async () => {
+    try {        
+        const res = await fetch('https://api.cryptonator.com/api/ticker/btc-usd')
+        const data = await res.json();
+        console.log(data.ticker.price);
+    }
+    catch (e) {
+        console.log("Something went wrong!", e)
+    }
+}
+
+fetchBitcoinPrice();
