@@ -55,7 +55,20 @@ const getDadJoke = async()  =>  {
     // Creates an object to hold the required configurations
     const config = {headers: {Accept: 'application/json'}   };
     const res = await axios.get('https://icanhazdadjoke.com/', config);
-    console.log('Have you heard this one yet?', res.data.joke);
+    console.log(res.data.joke);
+    return res.data.joke;
 }
 
-getDadJoke();
+const addNewJoke = async() =>  {
+    const newJoke = await getDadJoke();
+    let newLI = document.createElement('li');   
+    newLI.append(newJoke);
+    jokesList.append(newLI);
+}
+
+// Initialize required elements
+const jokeButton = document.querySelector('#jokeBtn');
+const jokesList = document.querySelector('#jokes');
+
+// Adds the event listener
+jokeButton.addEventListener('click', addNewJoke);
