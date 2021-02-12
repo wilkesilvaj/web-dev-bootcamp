@@ -25,3 +25,12 @@
 // }
 
 // fetchBitcoinPrice();
+
+axios.get('https://api.cryptonator.com/api/ticker/btc-usd')
+.then(res =>    {
+    console.log('Data acquired with AXIOS!',res.data.ticker.price);
+})
+.catch(err =>   {
+    console.log("Error", e);
+})
+
