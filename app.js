@@ -35,5 +35,10 @@ Color.prototype.hex = function()    {
     return '#' + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
 }
 
+Color.prototype.rgba = function(a=1.0)    {
+    return `rgba(${this.r},${this.g},${this.b}, ${a})`;
+}
+
+
 const color1 = new Color(40,50,60);
 const color2 = new Color(0,0,0);
