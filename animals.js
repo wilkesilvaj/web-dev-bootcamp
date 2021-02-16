@@ -1,29 +1,31 @@
-class Cat  {
-    constructor(name, age)   {
-    this.name = name;
-    this.age = age;
+class Pet {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
     }
 
-    eat()   {
+    eat() {
         return `${this.name} is eating!`;
     }
+}
 
-    meow()  {
+class Cat extends Pet { 
+    constructor(name, age, livesLeft = 9)   {
+        super(name, age);
+        this.livesLeft = livesLeft;
+    }
+
+    meow() {
         return 'Meow!';
     }
 }
 
-class Dog  {
-    constructor(name, age)   {
-    this.name = name;
-    this.age = age;
-    }
-
-    eat()   {
-        return `${this.name} is eating!`;
-    }
-    bark()  {
+class Dog extends Pet {   
+    bark() {
         return 'Bark!';
+    }
+    eat()   {
+        return `${this.name} scarfs its food!!`;
     }
 }
 
