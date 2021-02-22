@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+const folderName = process.argv[2] || 'Project';
 // ES6
 // import fs from 'fs';
 
@@ -9,4 +9,8 @@ const fs = require('fs');
 //     if (err) throw err;
 // });
 
-fs.mkdirSync('Cats');
+// Synchronous method
+fs.mkdirSync(folderName);
+fs.writeFileSync(`${folderName}/index.html`);
+fs.writeFileSync(`${folderName}/app.js`);
+fs.writeFileSync(`${folderName}/app.css`);
