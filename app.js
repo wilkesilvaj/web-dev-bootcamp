@@ -3,7 +3,9 @@ const app = express();
 
 app.use((req, res) =>   {
     console.log("We got a request!");
-    console.dir(req);
+    // res.send("Hello, we got a new request!!");
+    // res.send({color: 'red'});
+    res.send('<h1>This is my webpage!</h1>');
 });
 
 app.listen(8080, () =>  {
