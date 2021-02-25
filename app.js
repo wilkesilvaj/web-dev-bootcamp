@@ -7,9 +7,14 @@ app.set('view engine', 'ejs');
 // This gets the directory name which 'app.js' is stored, and adds '/views' for the views root directory
 app.set('views',path.join(__dirname, '/views'));
 
-
+// This is the response from the server for the 'home' in our localhost:3000
 app.get('/', (req, res) =>  {
     res.render('home.ejs');
+});
+
+app.get('/rand', (req, res) =>  {
+    const num = Math.floor(Math.random() * 10) +1;
+    res.render('random.ejs', {rand: num});
 });
 
 app.listen(3000, () =>  {
