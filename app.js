@@ -2,6 +2,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+
+// Require the 'dummy' data
+const redditData = require('./data.json');
+
+
 app.set('view engine', 'ejs');
 
 // This gets the directory name which 'app.js' is stored, and adds '/views' for the views root directory
@@ -15,7 +20,9 @@ app.get('/', (req, res) =>  {
 // This is the response for requests for 'localhost:3000/r/anythingHere'
 app.get('/r/:subreddit', (req, res) =>  {
     const {subreddit} = req.params;
-    res.render('subreddit', {subreddit});
+    const data = redditData[subreddit]
+    console.log(data);
+    res.render('subreddit', {...data});
 });
 
 // This is the response for requests for 'localhost:3000/cats'
