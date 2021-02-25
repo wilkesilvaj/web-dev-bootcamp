@@ -22,7 +22,7 @@ app.get('/r/:subreddit', (req, res) =>  {
 // This is the response for requests for 'localhost:3000/rand'
 app.get('/rand', (req, res) =>  {
     const num = Math.floor(Math.random() * 10) +1;
-    res.render('random.ejs', {rand: num});
+    res.render('random.ejs', {num});
 });
 
 app.listen(3000, () =>  {
