@@ -12,10 +12,16 @@ app.get('/', (req, res) =>  {
     res.render('home.ejs');
 });
 
-
+// This is the response for requests for 'localhost:3000/r/anythingHere'
 app.get('/r/:subreddit', (req, res) =>  {
     const {subreddit} = req.params;
     res.render('subreddit', {subreddit});
+});
+
+// This is the response for requests for 'localhost:3000/cats'
+app.get('/cats', (req, res) =>  {
+    const cats = ['Blue', 'Rocket', 'Monty', 'Stephanie', 'Winston'];
+    res.render('cats', {cats});
 });
 
 
