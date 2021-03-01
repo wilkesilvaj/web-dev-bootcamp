@@ -1,11 +1,13 @@
+// Require Express
 const express = require('express');
 const app = express();
 const path = require('path');
 
-
 // Require the 'dummy' data
 const redditData = require('./data.json');
 
+// Includes the folder 'assets', which contains CSS and JS to every request to our page, regardless of the request
+app.use(express.static('assets'));
 
 app.set('view engine', 'ejs');
 
