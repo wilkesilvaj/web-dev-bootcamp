@@ -7,7 +7,7 @@ const path = require('path');
 const redditData = require('./data.json');
 
 // Includes the folder 'assets', which contains CSS and JS to every request to our page, regardless of the request
-app.use(express.static('assets'));
+app.use(express.static(path.join(__dirname, '/assets')));
 
 app.set('view engine', 'ejs');
 
