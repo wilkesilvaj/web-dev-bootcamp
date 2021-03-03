@@ -41,6 +41,18 @@ app.get('/comments', (req, res) =>  {
     res.render('comments/index', {comments})
 })
 
+// Route to allow users to make a new comment
+app.get('/comments/new', (req, res) =>  {
+    res.render('comments/new', {comments})
+})
+
+// Route to handle the user input for a new comment (After going through /comments/new)
+app.post('/comments', (req, res) =>  {
+    const {username, comment} = req.body;
+    comments.push({username, comment});
+    res.send('IT WORKED!');    
+})
+
 app.listen(3000, () =>  {
     console.log('Listening to port 3000!');
 });
