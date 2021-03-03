@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/wilkesilvaj/web-dev-bootcamp#readme",
   "dependencies": {
+    "ejs": "^3.1.6",
     "express": "^4.17.1"
   }
 }
