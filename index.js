@@ -48,9 +48,13 @@ app.get('/comments/new', (req, res) =>  {
 
 // Route to handle the user input for a new comment (After going through /comments/new)
 app.post('/comments', (req, res) =>  {
+    // Spreads the values from the request's body
     const {username, comment} = req.body;
-    comments.push({username, comment});
-    res.send('IT WORKED!');    
+    // Pushes new comment into the array of comments
+    comments.push({username, comment});     
+    
+    // Redirects to the comment list 
+    res.redirect('/comments')
 })
 
 app.listen(3000, () =>  {
