@@ -4,22 +4,27 @@ const path = require("path");
 
 const comments = [
     {
+        id: 1,
         username: 'Todd', 
         comment: 'lool that is very funny!'
     },
     {
+        id: 2,
         username: 'Brock', 
         comment: 'OMG that is craaaaaaaaaaaaazy!'
     },
     {
+        id: 3,
         username: 'Laura', 
         comment: 'Well, I do love to go skiing'
     },
     {
+        id: 4,
         username: 'Bob', 
         comment: 'Man, I sure miss not having these COVID restrinctions!'
     },
     {
+        id: 5,
         username: 'Mandy', 
         comment: 'Work has been so stressful lately!'
     }
@@ -46,9 +51,16 @@ app.get('/comments/new', (req, res) =>  {
     res.render('comments/new', {comments})
 })
 
+// Route to retrieve one specific comment based on ID
+app.get('/comments/:id', (req, res) =>  {
+    const {id} = req.params;
+    const comment = comments.find(c => c.id === parseInt(id));
+    res.render('comments/show', {comment})
+})
+
 // Route to handle the user input for a new comment (After going through /comments/new)
 app.post('/comments', (req, res) =>  {
-    // Spreads the values from the request's body
+    // Destructures the values from the request's body
     const {username, comment} = req.body;
     // Pushes new comment into the array of comments
     comments.push({username, comment});     
