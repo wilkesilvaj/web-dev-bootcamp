@@ -31,9 +31,15 @@ app.use(express.json());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+// Route of GET requests of /tacos
 app.get('/tacos', (req, res) => {
     res.send('GET /tacos response!');
 });
+
+// Route to LIST all comments
+app.get('/comments', (req, res) =>  {
+    res.render('comments/index', {comments})
+})
 
 app.listen(3000, () =>  {
     console.log('Listening to port 3000!');
