@@ -19,6 +19,8 @@
   "homepage": "https://github.com/wilkesilvaj/web-dev-bootcamp#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.1"
-  }
+    "express": "^4.17.1",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {}
 }
