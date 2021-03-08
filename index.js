@@ -4,7 +4,7 @@ const path = require("path");
 const { v4: uuidv4 } = require('uuid');
 const methodOverride = require('method-override');
 
-const comments = [
+let comments = [
     {
         id: uuidv4(),
         username: 'Todd', 
@@ -76,6 +76,15 @@ app.patch('/comments/:id', (req, res) =>    {
     foundComment.comment = newCommentText;
     res.redirect('/comments');
 })
+
+// Delete Route for any comment
+app.delete('/comments/:id', (req, res) =>    {
+    const { id } = req.params;    
+    comments = comments.filter(c => c.id !== id);
+    res.redirect('/comments');
+})
+
+
 
 // Route to handle the user input for a new comment (After going through /comments/new)
 app.post('/comments', (req, res) =>  {
