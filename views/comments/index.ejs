@@ -16,7 +16,8 @@
                 <%=c.comment%> - <b>
                         <%=c.username%>
                     </b>
-                    <a href="/comments/<%= c.id %>">Details</a>
+                    <a href="/comments/<%= c.id %>">Details</a>             
+                    <a href="/comments/<%= c.id %>/edit">Edit comment</a>
             </li>
         <% } %>
     </ul>
