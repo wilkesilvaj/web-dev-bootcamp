@@ -20,4 +20,16 @@ const movieSchema = new mongoose.Schema ({
 // Creates the object / model based on my previously defined schema
 const Movie = mongoose.model('Movie', movieSchema);
 
-const amadeus = new Movie({title: 'Amadeus',year: 1986,score: 9.2,rating: 'R'});
+// const amadeus = new Movie({title: 'Amadeus',year: 1986,score: 9.2,rating: 'R'});
+
+Movie.insertMany([
+    {title: 'Amelie', year: 2001, score: 8.3, rating: 'R'},
+    {title: 'Alien', year: 1979, score: 8.1, rating: 'R'},
+    {title: 'The Iron Giant', year: 1999, score: 7.5, rating: 'PG'},
+    {title: 'Stand By Me', year: 1986, score: 8.6, rating: 'R'},
+    {title: 'Moonrise Kingdom', year: 2012, score: 7.3, rating: 'PG-13'},
+])
+    .then(data =>   {
+        console.log('Data inserted!');
+        console.log(data);
+    });
