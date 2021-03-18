@@ -41,7 +41,25 @@ const productSchema = new mongoose.Schema({
     }
 })
 
+// Silly demo instance method
+productSchema.methods.greet = function()    {
+    console.log("Hello! Howdy!");
+}
+
+// Instance method to toggle the 'onSale' attribute
+productSchema.methods.toggleOnSale = function ()    {
+    this.onSale = !this.onSale;
+    this.save();
+}
+
 const Product = mongoose.model('Product', productSchema);
+
+const findProduct = async () => {
+    const foundProduct = await Product.findOne({name: 'Bike Helmet'});
+    foundProduct.greet();
+}
+
+findProduct();
 
 // const bike = new Product({ name: 'Mountain Bike', price: 599, categories: ['Cycling', 'Sports'] });
 // bike.save()
